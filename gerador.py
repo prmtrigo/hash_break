@@ -1,7 +1,7 @@
 import hashlib
 
 def gerar_hash (senha):
-    return hashlib.sha256(senha.encode()).hexdigest()
+    return hashlib.md5(senha.encode()).hexdigest()
 
 senha = input("Digite sua senha: ")
 
